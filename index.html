@@ -474,6 +474,20 @@ if (isMobile) {
     el.style.animation = 'text-in 0.6s both';
     el.style.animationDelay = (0.75 + idx * 0.08) + 's';
   });
+  /* ===== Scale فقط کارت وسط ===== */
+
+@media (max-width: 500px) {
+  .logo-card {
+    transform: scale(0.82);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo-card {
+    transform: scale(0.72);
+  }
+}
 </script>
 </body>
 </html>
